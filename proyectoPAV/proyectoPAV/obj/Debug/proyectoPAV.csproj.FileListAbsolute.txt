@@ -1,0 +1,10 @@
+c:\users\asus\documents\visual studio 2013\Projects\proyectoPAV\proyectoPAV\bin\Debug\proyectoPAV.exe.config
+c:\users\asus\documents\visual studio 2013\Projects\proyectoPAV\proyectoPAV\bin\Debug\proyectoPAV.exe
+c:\users\asus\documents\visual studio 2013\Projects\proyectoPAV\proyectoPAV\bin\Debug\proyectoPAV.pdb
+c:\users\asus\documents\visual studio 2013\Projects\proyectoPAV\proyectoPAV\obj\Debug\proyectoPAV.csprojResolveAssemblyReference.cache
+c:\users\asus\documents\visual studio 2013\Projects\proyectoPAV\proyectoPAV\obj\Debug\proyectoPAV.frmLogin.resources
+c:\users\asus\documents\visual studio 2013\Projects\proyectoPAV\proyectoPAV\obj\Debug\proyectoPAV.Properties.Resources.resources
+c:\users\asus\documents\visual studio 2013\Projects\proyectoPAV\proyectoPAV\obj\Debug\proyectoPAV.csproj.GenerateResource.Cache
+c:\users\asus\documents\visual studio 2013\Projects\proyectoPAV\proyectoPAV\obj\Debug\proyectoPAV.exe
+c:\users\asus\documents\visual studio 2013\Projects\proyectoPAV\proyectoPAV\obj\Debug\proyectoPAV.pdb
+c:\users\asus\documents\visual studio 2013\Projects\proyectoPAV\proyectoPAV\obj\Debug\proyectoPAV.frmMenu.resources
