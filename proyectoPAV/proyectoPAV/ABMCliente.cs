@@ -43,7 +43,7 @@ namespace proyectoPAV
             
 
             //esto deberia cargar nuestra tabla local
-            tabla = oDatos.consultarTabla("Cliente");
+            DataTable tabla = oDatos.consultarTabla("Cliente");
             lstClientes.DataSource = tabla;
             lstClientes.ValueMember = tabla.Columns[0].ColumnName;
             lstClientes.DisplayMember = "n_usuario";
@@ -81,7 +81,6 @@ namespace proyectoPAV
         private void cmdNuevo_Click(object sender, EventArgs e)
         {
             limpiarCliente();
-
         }
         private void  limpiarCliente()
         {
@@ -103,20 +102,29 @@ namespace proyectoPAV
         private void cmdGuardar_Click(object sender, EventArgs e)
         {
             //deberia existir un metodo validar()
-            validarCliente();
-            //if (nuevo)
-            //{
-            //insert
+            if validarClienteExistente() == false
+            {
+                MessageBox("El cliente ya esta cargado");
+                return;
+            }
+            if (nuevo == true) 
+            {
+              //insert
             //la " y ' se usan para cuando se usan Text
-            string sql = "insert into Users (n_usuario, password, email, id_perfil, estado) values ("
-                                            + "'" + txtNombre.Text + "','"
-                                            + "'" + txtContraseña.Text + "','"
-                                            + "'" + txtEmail.Text + "',"
-                                            + cmbPerfil.selectedValue + ", 'S')";
-
-
-            //}
-            //else
+            string sql = "insert into Cliente (id,CUIT,nombre,apellido ,direccion,cod_postal,id_ciudad,telefono,id_cond_IVA,mail) values ("
+                                            + "'" + txtId.Text + "','"
+                                            + "'" + txtCUIT.Text + "','"
+                                            + "'" + txtNombre.Text + "',"
+                                            + "'" + txtApellido.Text + "',"
+                                            + "'" + txtDireccion.Text + "',"
+                                            + "'" + txtCodPostal.Text + "',"
+                                            + "'" + cboCiudad.TabIndex + "',"
+                                            + "'" + txtTelefono.Text + "',"
+                                            + "'" + txtCodPostal.Text + "',"
+                                            + "'" + cboCondIVA.TabIndex + "'," //cond iva
+                                            + "'" + txtMail.Text + "')";
+            }
+            else
             //{   
             //update
             //}
@@ -139,10 +147,22 @@ namespace proyectoPAV
             }
             if (txtNombre.Text != string.Empty)
             {
-                Message("Ingrese Nombre");
+                MessageBox("Ingrese Nombre");
                 return false;
             }
             return true;
-        }      
+        }
+
+        private void cmdModificar_Click(object sender, EventArgs e)
+        {
+
+        }    
+        private void validarClienteExistente(int id)
+        {
+            string sql = "Select id  from Cliente where id = " + "'" + txtId.Text + "'";
+            BDHelper.
+          
+
+        }
     }
 }

@@ -52,6 +52,8 @@
             this.cmdSalir = new System.Windows.Forms.Button();
             this.cboCiudad = new System.Windows.Forms.ComboBox();
             this.lstClientes = new System.Windows.Forms.ListBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cboCondIVA = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -131,7 +133,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(30, 305);
+            this.label9.Location = new System.Drawing.Point(30, 332);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(29, 13);
             this.label9.TabIndex = 8;
@@ -182,7 +184,7 @@
             // 
             // txtMail
             // 
-            this.txtMail.Location = new System.Drawing.Point(129, 302);
+            this.txtMail.Location = new System.Drawing.Point(129, 329);
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(121, 20);
             this.txtMail.TabIndex = 16;
@@ -196,7 +198,7 @@
             // 
             // cmdNuevo
             // 
-            this.cmdNuevo.Location = new System.Drawing.Point(33, 355);
+            this.cmdNuevo.Location = new System.Drawing.Point(33, 376);
             this.cmdNuevo.Name = "cmdNuevo";
             this.cmdNuevo.Size = new System.Drawing.Size(75, 23);
             this.cmdNuevo.TabIndex = 18;
@@ -206,16 +208,17 @@
             // 
             // cmdModificar
             // 
-            this.cmdModificar.Location = new System.Drawing.Point(142, 355);
+            this.cmdModificar.Location = new System.Drawing.Point(142, 376);
             this.cmdModificar.Name = "cmdModificar";
             this.cmdModificar.Size = new System.Drawing.Size(75, 23);
             this.cmdModificar.TabIndex = 19;
             this.cmdModificar.Text = "Modificar";
             this.cmdModificar.UseVisualStyleBackColor = true;
+            this.cmdModificar.Click += new System.EventHandler(this.cmdModificar_Click);
             // 
             // cmdEliminar
             // 
-            this.cmdEliminar.Location = new System.Drawing.Point(254, 355);
+            this.cmdEliminar.Location = new System.Drawing.Point(254, 376);
             this.cmdEliminar.Name = "cmdEliminar";
             this.cmdEliminar.Size = new System.Drawing.Size(75, 23);
             this.cmdEliminar.TabIndex = 20;
@@ -224,7 +227,7 @@
             // 
             // cmdGuardar
             // 
-            this.cmdGuardar.Location = new System.Drawing.Point(365, 355);
+            this.cmdGuardar.Location = new System.Drawing.Point(365, 376);
             this.cmdGuardar.Name = "cmdGuardar";
             this.cmdGuardar.Size = new System.Drawing.Size(75, 23);
             this.cmdGuardar.TabIndex = 21;
@@ -234,7 +237,7 @@
             // 
             // cmdSalir
             // 
-            this.cmdSalir.Location = new System.Drawing.Point(466, 355);
+            this.cmdSalir.Location = new System.Drawing.Point(466, 376);
             this.cmdSalir.Name = "cmdSalir";
             this.cmdSalir.Size = new System.Drawing.Size(75, 23);
             this.cmdSalir.TabIndex = 22;
@@ -256,14 +259,34 @@
             this.lstClientes.FormattingEnabled = true;
             this.lstClientes.Location = new System.Drawing.Point(317, 30);
             this.lstClientes.Name = "lstClientes";
-            this.lstClientes.Size = new System.Drawing.Size(269, 290);
+            this.lstClientes.Size = new System.Drawing.Size(269, 316);
             this.lstClientes.TabIndex = 24;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(30, 298);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(77, 13);
+            this.label10.TabIndex = 25;
+            this.label10.Text = "Condición IVA:";
+            // 
+            // cboCondIVA
+            // 
+            this.cboCondIVA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCondIVA.FormattingEnabled = true;
+            this.cboCondIVA.Location = new System.Drawing.Point(129, 295);
+            this.cboCondIVA.Name = "cboCondIVA";
+            this.cboCondIVA.Size = new System.Drawing.Size(121, 21);
+            this.cboCondIVA.TabIndex = 26;
             // 
             // ABMCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 390);
+            this.ClientSize = new System.Drawing.Size(598, 411);
+            this.Controls.Add(this.cboCondIVA);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.lstClientes);
             this.Controls.Add(this.cboCiudad);
             this.Controls.Add(this.cmdSalir);
@@ -322,5 +345,7 @@
         private System.Windows.Forms.Button cmdSalir;
         private System.Windows.Forms.ComboBox cboCiudad;
         private System.Windows.Forms.ListBox lstClientes;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cboCondIVA;
     }
 }

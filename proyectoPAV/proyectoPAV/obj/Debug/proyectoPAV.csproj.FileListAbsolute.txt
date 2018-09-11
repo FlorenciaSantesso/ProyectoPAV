@@ -11,3 +11,9 @@ c:\users\asus\documents\visual studio 2013\Projects\proyectoPAV\proyectoPAV\obj\
 E:\josue\ProyectoPAV\proyectoPAV\proyectoPAV\bin\Debug\proyectoPAV.exe.config
 E:\josue\ProyectoPAV\proyectoPAV\proyectoPAV\obj\Debug\proyectoPAV.exe
 E:\josue\ProyectoPAV\proyectoPAV\proyectoPAV\obj\Debug\proyectoPAV.pdb
+E:\josue\ProyectoPAV\proyectoPAV\proyectoPAV\obj\Debug\proyectoPAV.csprojResolveAssemblyReference.cache
+E:\josue\ProyectoPAV\proyectoPAV\proyectoPAV\obj\Debug\proyectoPAV.ABMCliente.resources
+E:\josue\ProyectoPAV\proyectoPAV\proyectoPAV\obj\Debug\proyectoPAV.frmLogin.resources
+E:\josue\ProyectoPAV\proyectoPAV\proyectoPAV\obj\Debug\proyectoPAV.frmMenu.resources
+E:\josue\ProyectoPAV\proyectoPAV\proyectoPAV\obj\Debug\proyectoPAV.Properties.Resources.resources
+E:\josue\ProyectoPAV\proyectoPAV\proyectoPAV\obj\Debug\proyectoPAV.csproj.GenerateResource.Cache

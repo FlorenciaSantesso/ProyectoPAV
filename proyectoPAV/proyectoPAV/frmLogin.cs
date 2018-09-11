@@ -37,28 +37,28 @@ namespace proyectoPAV
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "")
+            if (txtUsuario.Text == string.Empty)
             {
                 MessageBox.Show("Se debe ingresar un usuario.");
                 return;
             }
 
-            if (txtContraseña.Text == "")
+            if (txtContrasenia.Text == string.Empty)
             {
                 MessageBox.Show("Debe ingresar la contraseña.");
                 return;
             }
 
             frmMenu principal = new frmMenu();
-            if (principal.ValidarUsuarios(txtUsuario.Text, txtContraseña.Text))
+            if (principal.ValidarUsuarios(txtUsuario.Text, txtContrasenia.Text))
             {
                 MessageBox.Show("Ha iniciado sesión exitosamente.");
                 this.Close();
             }
             else
             {
-                txtUsuario.Text = "";
-                txtContraseña.Text = "";
+                txtUsuario.Text = string.Empty;
+                txtContrasenia.Text = string.Empty;
                 MessageBox.Show("Debe ingresar usuario y/o contraseña válido.");
             }
         }
